@@ -1,6 +1,6 @@
 import cv2 as cv
 
-cap =  cv.VideoCapture("http://10.23.14.237:4747/mjpegfeed")
+cap =  cv.VideoCapture(0)
 
 while(True):
     # Capture frame-by-frame
@@ -13,10 +13,11 @@ while(True):
         cap.open()
 
     # Our operations on the frame come here
-    gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+    #gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
 
     # Display the resulting frame
-    cv.imshow("grayscale", gray)
+    cv.rectangle(frame,(384,100),(510,128),(0,255,0),8)
+    #cv.imshow("grayscale", gray)
     cv.imshow("normal", frame)
 
     if cv.waitKey(1) & 0xFF == ord("q"):
