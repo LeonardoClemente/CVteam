@@ -21,3 +21,8 @@ IOS:
 https://gist.github.com/titipata/cfae77f5f7ac7f24368d
 
 LINUX:
+
+
+Python IDE:
+https://www.jetbrains.com/pycharm/
+Complete with Tec's mail
